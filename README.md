@@ -52,6 +52,8 @@
 
    - 使用 npm 安装 PM2：`npm install pm2 -g`
    - PM2 是一个带有负载均衡功能的 Node 应用的进程管理器。
+   
+   
 
 3. **安装 PNPM**
    - 使用 npm 安装 PNPM：`npm install -g pnpm`
@@ -106,8 +108,26 @@
 4. **启动服务**
    - 使用命令：`pnpm start` 来启动项目，它将默认在 9520 端口监听。
 
-## 学习交流
+## 常见问题
 
-完整未编译源码暂未开源，扫码添加微信备注 99，拉交流群
+-bash: npm: command not found
+Node.js 管理页面未选择版本
 
-<img src="https://github.com/vastxie/NineAIQuickDeploy/assets/24899308/ee20578f-063d-48d8-bff6-85ac3e38fe60" width="300">
+npm install pm2 -g
+npm WARN cli npm v10.5.0 does not support Node.js v16.20.2. This version of npm supports the following node versions: `^18.17.0 || >=20.5.0`. You can find the latest version at https://nodejs.org/.
+npm WARN config init.module Use `--init-module` instead.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+
+输入命令`npm -v`来检查是否已安装npm。如果显示了npm的版本号，表示已安装npm。如果没有显示版本号或显示“command not found”，则表示未安装npm。
+如果已安装npm，可以使用命令`npm uninstall npm -g`来卸载npm。
+
+npm install -g npm@8.19.4
+
+更新uuid
+
+npm install uuid@latest -g
+
+更新成功后，继续安装pm2，也会提示：npm WARN deprecated uuid@3.4.0: Please upgrade to version 7 or higher.
+
+其实是已经安装成功了
